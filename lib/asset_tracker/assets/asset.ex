@@ -19,5 +19,6 @@ defmodule AssetTracker.Asset do
     asset
     |> cast(attrs, [:symbol])
     |> validate_required([:symbol])
+    |> unique_constraint(:symbol)
   end
 end
