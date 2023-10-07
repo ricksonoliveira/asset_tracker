@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: library/postgres
+    ports:
+      - "5432:5432"
+    volumes_from:
+      - pgdata
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: asset_tracker_dev
+
+  pgdata:
+    image: busybox
+    volumes:
+      - /data
