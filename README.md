@@ -20,7 +20,7 @@ Clone the repository:
 git clone https://github.com/your-repo-link/asset-tracker.git
 ```
 
-Inside projects root dir, install dependencies:
+Inside the project root dir, install dependencies:
 
 ``` bash
 mix deps.get
@@ -68,14 +68,15 @@ Our project is not just developed using the Test-Driven Development (TDD) strate
 mix test
 ```
 
-Test Coverage
+**Test Coverage**
+
 To check the test coverage, use:
 
 ``` bash
 mix coveralls
 ```
 
-You'll be presented with a comprehensive report, showcasing the test coverage for each module and function, such as this one bellow:
+You'll be presented with a comprehensive report, showcasing the test coverage for each module and function, such as the one bellow:
 
 ```bash
 .........................
